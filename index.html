@@ -8,7 +8,7 @@
     <style>
 
         .textoVerde{
-            color: yellowgreen;
+            color: red;
             font-weight: bold;
         }
     </style>
@@ -16,11 +16,13 @@
 
 <script>
 
-    $(document).ready(function(){
-        $('ul').addClass('textoVerde');
+    // $(document).ready(function(){
+    //     $('ul').addClass('textoVerde');
+    // });
+
+    $(function(){
+        $('li:first-child').addClass('textoVerde');
     });
-
-
 
 </script>
 
