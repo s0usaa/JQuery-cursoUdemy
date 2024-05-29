@@ -6,59 +6,26 @@
     <title>JQuery</title>
     <script src="/Leccion1/libreria/jquery-3.7.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-
-        img{
-            width: 200px;
-            height: 200px;
-        }
-
-        hr{
-            margin-bottom: 60px;
-        }
-
-    </style>
 </head>
 <body>
-    <div class="container">
 
-        <h1>Selectores y Encadenamientos</h1>
-        <hr>
+<h2>Mi pagina con jQuery</h2>
 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eveniet.</p>
 
-        <div class="row">
+<p class="destacado">Parrafo con Clase</p>
 
-            <div class="col-sm-4">
-                <img src="/Leccion1/img/fotomodificada.jpg" alt="Lol" class="img-circle">
-            </div>
-
-            <div class="col-sm-5">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum vitae inventore ex nam beatae enim nesciunt harum ea at totam.</p>
-            </div>
-
-            <div class="col-sm-3">
-                <ul>
-                    <li>Matematicas</li>
-                    <li>Programacion</li>
-                    <li>Analisis</li>
-                    <li>Fisica</li>
-                    <li>Geografia</li>
-                </ul>
-            </div>
-
-        </div>
-</div>
+<p id="parrafo-id">
+    Parrafo con ID
+</p>
 
 <script>
 
-    $('img')
-    .attr('src','/Leccion1/img/about.jpg')
-    .removeClass('img-circle')
-    .addClass('img-cancer');
+    $('p').css('color','blue');
 
-    $('.col-sm-5')
-    .find('p')
-    .html('Hola cancers aqui haciendo el curso de Udemy');
+    $('.destacado').css('font-weight','bold');
+
+    $('#parrafo-id').css('text-decoration','underline');
 
 </script>
 
