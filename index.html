@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery</title>
-    <script src="Leccion1/jquery-3.7.1.min.js"></script>
+    <script src="/Leccion1/libreria/jquery-3.7.1.min.js"></script>
     <style>
 
         .textoVerde{
@@ -13,6 +13,17 @@
         }
     </style>
 </head>
+
+<script>
+
+    $(document).ready(function(){
+        $('ul').addClass('textoVerde');
+    });
+
+
+
+</script>
+
 <body>
     
     <ul>
@@ -28,13 +39,5 @@
     </ul>
 
 
-    <script>
-
-
-        $('ul').addClass('textoVerde')
-
-
-    </script>
-    
 </body>
 </html>
