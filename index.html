@@ -17,13 +17,14 @@
 <h2>Mi pagina con jQuery</h2>
 
 
-    <input type="text" id="campoTexto">
+    <input type="text" id="presionTeclas">
 
 
 <script>
 
-    $('#campoTexto').change(function(){
-        alert('el contenido del campo ha cambiado');
+    $('#presionTeclas').keypress(function(event){
+
+        alert("tecla presionada: " + String.fromCharCode(event.which));
     })
 
 </script>
