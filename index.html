@@ -14,23 +14,19 @@
 
 <h2>Mi pagina con jQuery</h2>
 
-<p>Elemento A</p>
-<p>Elemento B</p>
-<p>Elemento C</p>
-
-<p class="par">Parrafo 1</p>
-<p class="par">Parrafo 2</p>
-<p class="par">Parrafo 3</p>
-
-<p class="par">Este es un parrafo</p>
-<p class="par">Otro parrafo aqui</p>
+<div id="contenedor">
+    <p>Este es un parrafo existente</p>
+</div>
 
 <script>
 
-$('p:contains("Elemento")').css('font-style','italic');
-$('p:contains("3")').css('color','red');
+    $('#contenedor').append('<p>Nuevo parrafo al final</p>');
 
-$('.par:contains("parrafo")').css('background-color','yellow')
+    $('#contenedor').prepend('<p>Nuevo parrafo al principio</p>');
+    
+    $('#contenedor p').after('<p>Nuevo parrafo despues del primero</p>');
+    
+    $('#contenedor p').before('<p>Nuevo parrafo antes del primero</p>');
 
 </script>
 
