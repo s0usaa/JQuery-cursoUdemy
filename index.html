@@ -17,17 +17,13 @@
 <h2>Mi pagina con jQuery</h2>
 
 
-    <button id="botonClick">Haz click aqui</button>
+    <input type="text" id="campoTexto">
 
 
 <script>
 
-    $('#botonClick').click(function(){
-        alert('Has hecho click correctamente');
-    })
-
-    $('#botonClick').on('click', function(){
-        $(this).toggleClass('resaltado');
+    $('#campoTexto').change(function(){
+        alert('el contenido del campo ha cambiado');
     })
 
 </script>
