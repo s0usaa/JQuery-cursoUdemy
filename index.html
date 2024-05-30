@@ -9,6 +9,7 @@
 <style>
     .resaltado{
         color: aqua;
+        font-weight: bold;
     }
 </style>
 </head>
@@ -17,16 +18,17 @@
 <h2>Mi pagina con jQuery</h2>
 
 
-    <p id="elementoModificado">Este parrafo sera modificado</p>
+    <p id="elementoEstilo">Este parrafo tendra su propio estilo</p>
 
 
 <script>
 
-    $('#elementoModificado').html('Nevo texto modificado');
+    $('#elementoEstilo').css({
+        "color": "green",
+        "font-weight": "normal"
+    })
 
-    $('#elementoModificado').addClass('resaltado');
-
-    $('#elementoModificado').attr('title','este es un parrafo modificado');
+    // $('#elementoEstilo').addClass('resaltado');
 
 </script>
 
