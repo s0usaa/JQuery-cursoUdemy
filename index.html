@@ -10,8 +10,9 @@
     .resaltado{
         width: 100px;
         height: 100px;
-        background-color: lightcoral;
-        transition: background-color .5s;
+        margin: 10px;
+        float: left;
+        cursor: pointer;
     }
 
     .resaltado:hover {
@@ -24,19 +25,20 @@
 <h2>Mi pagina con jQuery</h2>
 
 
-    <div class="resaltado"></div>
+    <div class="resaltado" id="caja1"></div>
+    <div class="resaltado" id="caja2"></div>
+    <div class="resaltado" id="caja3"></div>
 
 
 <script>
 
-    $('.resaltado').hover(
-        function(){
-            alert('el puntero esta sobre la caja');
-        },
-        function(){
-            alert('el puntero a salido de la caja');
-        }
-    );
+    $('.resaltado').click(function(){
+        var cajaId = $(this).attr('id');
+
+        alert('Has hecho click en la caja con ID: ' + cajaId);
+
+        $(this).css("background-color", "orange");
+    })
 
 </script>
 
