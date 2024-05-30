@@ -14,19 +14,13 @@
 
 <h2>Mi pagina con jQuery</h2>
 
-<div id="contenedor">
-    <p>Este es un parrafo existente</p>
-</div>
+
+    <p id="elementoEliminado">Este parrafo sera eliminado</p>
+
 
 <script>
 
-    $('#contenedor').append('<p>Nuevo parrafo al final</p>');
-
-    $('#contenedor').prepend('<p>Nuevo parrafo al principio</p>');
-    
-    $('#contenedor p').after('<p>Nuevo parrafo despues del primero</p>');
-    
-    $('#contenedor p').before('<p>Nuevo parrafo antes del primero</p>');
+    $('#elementoEliminado').remove();
 
 </script>
 
